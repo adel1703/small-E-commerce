@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/style.css">
+
+</head>
+<body>
+    
+
+    <div class="container w-75 m-auto py-4 ">
+        <div class="row">
+            <div class="col-lg-6">
+                <label class="fw-bold mb-2 text-white" for="ProductNAme">Product Name</label>
+                <input id="ProductNAme" type="text" class="form-control mb-3" placeholder="Product Name...">
+            </div>
+            <div class="col-lg-6">
+                <label class="fw-bold mb-2 text-white" for="ProductPrice">Product Price</label>
+        <input id="ProductPrice" type="number" class="form-control mb-3" placeholder="Product Price...">
+            </div>
+        </div>
+
+        <label class="fw-bold mb-2 text-white" for="ProductCategory">Product Category</label>
+        <input id="ProductCategory" type="text" class="form-control mb-3" placeholder="Product Category...">
+
+        <label class="fw-bold mb-2 text-white" for="ProductDescription">Product Description</label>
+        <textarea id="ProductDescription" class="form-control mb-3" placeholder="Product Description..." ></textarea>
+
+        <button id="addButton" onclick="AddNewProduct()" class="btn btn-primary btn-lg d-block w-25 m-auto rounded-pill mb-3">Add</button>
+        <button id="updateButton" onclick="Update()" class="btn btn-danger btn-lg d-none w-25 m-auto rounded-pill mb-3">Update</button>
+        <button onclick="clearValues()" class="btn btn-warning btn-lg d-block w-25 m-auto rounded-pill mb-3">Clear</button>
+
+        <input id="search" type="text" onkeyup="searchItem( this.value )" class="form-control mb-3 text-center rounded-pill w-75 m-auto" placeholder=" search...">
+
+        <table class="table mt-4 text-center table-striped">
+            <thead>
+                <tr class="fw-bold">
+                        <td>Name</td>
+                        <td>Price</td>
+                        <td>Category</td>
+                        <td>Description</td>
+                        <td>Update</td>
+                        <td>Delete</td>
+
+                </tr>
+            </thead>
+            <tbody id="tbody">
+                
+                
+            </tbody>
+        </table>
+        
+
+
+    </div>
+
+    
+
+
+
+    <script src="Js/bootstrap.bundle.min.js"></script>
+    <script src="Js/main.js"></script>
+</body>
+</html>
